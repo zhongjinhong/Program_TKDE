@@ -1,4 +1,4 @@
-function [  ] = compare( experiment_num )
+function [  ] = train_models( experiment_num )
     addpath('tools/');
     Initialization();
     svm_para=sprintf('%s','-s 0 -t 0');
