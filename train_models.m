@@ -16,7 +16,7 @@ function [  ] = train_models( experiment_num )
     for num=begin_num:end_num
         for repeat_num=1:total_repeat_num           
 %            The experiments of Robustness to Systematic Noise
-            if experiment_num==30||31||40
+            if experiment_num==30||experiment_num==31||experiment_num==40
                 file_name=sprintf('%s%s%d%s',input_file_dir,'X_',(num-1)*total_repeat_num+repeat_num,'.mat');
                 load(file_name); 
                 file_name=sprintf('%s%s%d%s',input_file_dir,'Y_',(num-1)*total_repeat_num+repeat_num,'.mat');
