@@ -7,8 +7,6 @@ function [  ] = produce_all_data()
     
     produce_one_data( 5, 4);
     produce_one_data( 6, 4);
-    system_error();
-    system_error_new();
-    system_error_new2();
+    
 end
 
